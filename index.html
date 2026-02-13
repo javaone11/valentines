@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>💕 Will you be my Valentine? 💕</h1>
+            <p class="message">I'd love to take you on a date!</p>
+            
+            <div class="button-container">
+                <button class="btn yes-btn" onclick="yesClicked()">Yes! 🎉</button>
+                <button class="btn no-btn" id="noBtn" onmouseover="moveNoButton()">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="confetti" id="confetti"></div>
+    <div class="sad-gifs" id="sadGifs"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
