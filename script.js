@@ -171,7 +171,7 @@ function createDownloadableVersion() {
             <div style="background: #f5f5f5; padding: 40px; border-radius: 15px; margin: 80px 0 40px 0; text-align: left;">
                 <p style="font-size: 1.5em; margin: 20px 0;"><strong>📍 Place:</strong> Araneta Cubao ( Di ko alam saan kakain)</p>
                 <p style="font-size: 1.5em; margin: 20px 0;"><strong>📅 Date:</strong> February 14, 2026 Saturday</p>
-                <p style="font-size: 1.5em; margin: 20px 0;"><strong>⏰ Time:</strong> To be announced</p>
+                <p style="font-size: 1.5em; margin: 20px 0;"><strong>⏰ Time:</strong> To be announced.</p>
             </div>
             
             <p style="color: #666; font-size: 30px; margin: 40px 0; text-align: center; color: black;">See you later 😉</p>
