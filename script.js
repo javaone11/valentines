@@ -28,8 +28,8 @@ function yesClicked() {
         </div>
         
         <div style="background: #f5f5f5; padding: 40px; border-radius: 15px; margin: 30px 0; text-align: left;">
-            <p style="font-size: 1.3em; margin: 15px 0;"><strong>📍 Place:</strong> To be announced</p>
-            <p style="font-size: 1.3em; margin: 15px 0;"><strong>📅 Date:</strong> To be announced</p>
+            <p style="font-size: 1.3em; margin: 15px 0;"><strong>📍 Place:</strong> Araneta Cubao ( Di ko alam saan kakain)</p>
+            <p style="font-size: 1.3em; margin: 15px 0;"><strong>📅 Date:</strong> February 14, 2026 Saturday</p>
             <p style="font-size: 1.3em; margin: 15px 0;"><strong>⏰ Time:</strong> To be announced</p>
         </div>
         
