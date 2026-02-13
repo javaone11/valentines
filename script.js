@@ -22,30 +22,37 @@ function yesClicked() {
     createConfetti();
     
     const card = document.querySelector('.card');
+    const isMobile = window.innerWidth <= 480;
+    const gifMaxWidth = isMobile ? '200px' : '500px';
+    const gifMinHeight = isMobile ? '150px' : '380px';
+    const detailsSize = isMobile ? '0.85em' : '1.2em';
+    const messageSize = isMobile ? '1.1em' : '1.4em';
+    const padding = isMobile ? '12px 10px' : '50px 60px';
+    
     card.innerHTML = `
-        <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin: 20px 0 40px 0;">
-            <img src="yay.gif" style="width: 90%; height: auto; max-width: 700px; min-height: 500px; border-radius: 15px;" alt="Yay GIF">
+        <div style="display: flex; justify-content: center; align-items: center; margin: ${isMobile ? '8px 0 12px 0' : '15px 0 25px 0'};">
+            <img src="yay.gif" style="width: 85%; height: auto; max-width: ${gifMaxWidth}; min-height: ${gifMinHeight}; border-radius: 15px;" alt="Yay GIF">
         </div>
         
-        <div style="background: #f5f5f5; padding: 40px; border-radius: 15px; margin: 30px 0; text-align: left;">
-            <p style="font-size: 1.3em; margin: 15px 0;"><strong>📍 Place:</strong> Araneta Cubao ( Di ko alam saan kakain)</p>
-            <p style="font-size: 1.3em; margin: 15px 0;"><strong>📅 Date:</strong> February 14, 2026 Saturday</p>
-            <p style="font-size: 1.3em; margin: 15px 0;"><strong>⏰ Time:</strong> To be announced</p>
+        <div style="background: #f5f5f5; padding: ${isMobile ? '12px' : '25px'}; border-radius: 15px; margin: ${isMobile ? '10px 0' : '20px 0'}; text-align: left;">
+            <p style="font-size: ${detailsSize}; margin: ${isMobile ? '5px 0' : '10px 0'};"><strong>📍 Place:</strong> Araneta Cubao</p>
+            <p style="font-size: ${detailsSize}; margin: ${isMobile ? '5px 0' : '10px 0'};"><strong>📅 Date:</strong> Feb 14, 2026</p>
+            <p style="font-size: ${detailsSize}; margin: ${isMobile ? '5px 0' : '10px 0'};"><strong>⏰ Time:</strong> TBA</p>
         </div>
         
-        <p style="color: #666; font-size: 1.6em; margin: 20px 0;color: black;">See you later 😉</p>
+        <p style="color: black; font-size: ${messageSize}; margin: ${isMobile ? '8px 0' : '15px 0'};">See you later 😉</p>
         
-        <div style="display: flex; justify-content: center; margin: 20px 0;">
-            <button class="btn yes-btn" style="margin-bottom: 20px;" onclick="captureAndDownload()">🖨️ Print</button>
+        <div style="display: flex; justify-content: center; margin: ${isMobile ? '8px 0' : '15px 0'};">
+            <button class="btn yes-btn" style="margin-bottom: 0;" onclick="captureAndDownload()">🖨️ Print</button>
         </div>
         
-        <p style="color: #000000; font-size: 0.95em; margin-top: 20px; font-style: italic;">
-            📸 Please take a screenshot and send it to me!
+        <p style="color: #000000; font-size: ${isMobile ? '0.8em' : '0.95em'}; margin-top: 8px; font-style: italic; text-align: center;">
+            📸 Screenshot & send!
         </p>
     `;
     card.style.animation = 'none';
     card.style.background = 'linear-gradient(135deg, #ff6b9d, #ffb7d5)';
-    card.style.padding = '60px 80px';
+    card.style.padding = padding;
 }
 
 function createConfetti() {
